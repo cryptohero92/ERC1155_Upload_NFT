@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "upload": "node scripts/upload_images.js"
   },
   "keywords": [],
   "author": "SoftTalents",
@@ -15,6 +17,8 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "moralis": "^2.10.1"
   }
 }

@@ -7,12 +7,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  const AwesomeGame = await hre.ethers.getContractFactory("AwesomeGame");
+  const DogNFT = await hre.ethers.getContractFactory("DogNFT");
   const [owner] = await hre.ethers.getSigners();
-  const awesomeGame = await AwesomeGame.deploy();
+  const dogNFT = await DogNFT.deploy();
 
-  await awesomeGame.deployed();
-  console.log(`Contract deployed by ${owner.address} to ${awesomeGame.address}\n`);
+  await dogNFT.deployed();
+  console.log(`Contract deployed by ${owner.address} to ${dogNFT.address}\n`);
   console.log(`Tokens have been minted successfully!`);
 }
 

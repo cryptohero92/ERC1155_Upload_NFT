@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "npx hardhat run scripts/deploy.js",
-    "upload": "node scripts/upload_images.js"
+    "upload": "node scripts/upload_nft_bulk.js"
   },
   "keywords": [],
   "author": "SoftTalents",
